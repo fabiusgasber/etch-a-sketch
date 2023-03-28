@@ -1,1 +1,5 @@
-# etch-a-sketch
+A web based etch-a-sketch game, built with HTML, CSS and JavaScript.
+
+It is part of <a href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch">The Odin Projects Curriculum</a>
+
+Live demo link will be added soon.
