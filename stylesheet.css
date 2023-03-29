@@ -19,3 +19,10 @@ h1{
     width: 660px;
     margin: 0px auto;
 }
+.cells {
+    height:40px; 
+    width:40px; 
+    border: 1px solid black; 
+    margin: -1px; 
+    background-color: white;
+}
