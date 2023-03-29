@@ -13,7 +13,4 @@ function createGrid(){
         e.target.style.cssText = 'background-color: black;'
     });
 
-    // Div an der Stelle event.x und event.y = Farbe
-    // wie bekomme ich raus wo das richtige div ist, was gefärbt werden soll?
-
-createGrid();
+    createGrid();
