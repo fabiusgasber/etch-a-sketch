@@ -1,4 +1,4 @@
-const container = document.querySelector('#grid');
+const grid = document.querySelector('#grid');
 const color = document.querySelector('#color');
 
 function createGrid(){
@@ -6,11 +6,11 @@ function createGrid(){
         for(let j = 0; j < 16; j++){
         const div = document.createElement('div');
         div.classList.toggle('cells');
-        container.appendChild(div);
+        grid.appendChild(div);
         }
     }
 }
-    container.addEventListener('mousemove', (e) => {
+    grid.addEventListener('mousemove', (e) => {
         e.target.style.cssText = `background-color: ${color.value}`;
     });
 
