@@ -1,4 +1,5 @@
 const container = document.querySelector('#grid');
+const color = document.querySelector('#color');
 
 function createGrid(){
     for(let i = 0; i < 16; i++){
@@ -10,7 +11,7 @@ function createGrid(){
     }
 }
     container.addEventListener('mousemove', (e) => {
-        e.target.style.cssText = 'background-color: black;'
+        e.target.style.cssText = `background-color: ${color.value}`;
     });
 
     createGrid();
