@@ -18,6 +18,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
 }
 #grid{
     display: flex;
@@ -27,7 +28,6 @@ h1{
     align-content: center;
     height: 640px;
     width: 640px;
-    margin: 0px auto;
 }
 .cells {
     flex: auto;
@@ -37,8 +37,12 @@ h1{
     margin: -1px; 
     background-color: white;
 }
-#color-picker{
-    position: absolute;
-    margin-left: 10em;
-
+.user-area{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.user-component{
+    width: 100%;
 }
