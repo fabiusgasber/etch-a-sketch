@@ -2,6 +2,10 @@ const grid = document.querySelector('#grid');
 const color = document.querySelector('#color');
 const clear = document.querySelector('#clear');
 
+grid.addEventListener('mousemove', changeColor);
+clear.addEventListener('click', removeColor);
+
+
 function createGrid(){
     for(let i = 0; i < 16; i++){
         for(let j = 0; j < 16; j++){
@@ -11,11 +15,10 @@ function createGrid(){
         }
     }
 }
-    grid.addEventListener('mousemove', (e) => {
+    
+    function changeColor(e){
         e.target.style.cssText = `background-color: ${color.value}`;
-    });
-
-    clear.addEventListener('click', removeColor);
+    }
 
     function removeColor(){
         let cells = grid.childNodes;
