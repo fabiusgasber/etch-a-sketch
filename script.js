@@ -1,5 +1,6 @@
 const grid = document.querySelector('#grid');
 const color = document.querySelector('#color');
+const clear = document.querySelector('#clear');
 
 function createGrid(){
     for(let i = 0; i < 16; i++){
@@ -13,5 +14,14 @@ function createGrid(){
     grid.addEventListener('mousemove', (e) => {
         e.target.style.cssText = `background-color: ${color.value}`;
     });
+
+    clear.addEventListener('click', removeColor);
+
+    function removeColor(){
+        let cells = grid.childNodes;
+        for (let i = 0; i < cells.length; i++){
+            cells[i].style.cssText = 'background-color: #FFFFFF'
+        }
+    }
 
     createGrid();
