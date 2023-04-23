@@ -46,3 +46,10 @@ h1{
 .user-component{
     width: 100%;
 }
+
+#sizeSlider {
+    -webkit-appearance: none;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    outline: none;
+}
