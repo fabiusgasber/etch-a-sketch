@@ -9,7 +9,7 @@ clear.addEventListener('click', removeColor);
 slider.addEventListener('input', updateValue);
 
 function updateValue(){
-    sliderVal.textContent = slider.value;
+    sliderVal.textContent = `${slider.value} x ${slider.value}`;
 }
 
 function createGrid(){
