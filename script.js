@@ -12,9 +12,10 @@ function updateValue(){
     sliderVal.textContent = `${slider.value} x ${slider.value}`;
 }
 
-function createGrid(){
-    for(let i = 0; i < 16; i++){
-        for(let j = 0; j < 16; j++){
+
+function createGrid(slider){
+    for(let i = 0; i < slider; i++){
+        for(let j = 0; j < slider; j++){
         const div = document.createElement('div');
         div.classList.toggle('cells');
         grid.appendChild(div);
@@ -33,5 +34,5 @@ function removeColor(){
         }
     }
 
-createGrid();
+createGrid(parseInt(slider.value));
 updateValue();
