@@ -1,11 +1,11 @@
 const grid = document.querySelector('#grid');
 const color = document.querySelector('#color');
-const clear = document.querySelector('#clear');
+const clearButton = document.querySelector('#clearButton');
 const slider = document.querySelector('#slider');
-const sliderVal = document.querySelector('#value');
+const sliderVal = document.querySelector('#sliderValue');
 
 grid.addEventListener('mousemove', changeColor);
-clear.addEventListener('click', removeColor);
+clearButton.addEventListener('click', removeColor);
 slider.addEventListener('input', updateValue);
 
 function updateValue(){
