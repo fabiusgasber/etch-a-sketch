@@ -3,13 +3,21 @@ const color = document.querySelector('#color');
 const clearButton = document.querySelector('#clearButton');
 const slider = document.querySelector('#slider');
 const sliderText = document.querySelector('#sliderValue');
+const container = document.querySelector('.container');
 
 grid.addEventListener('mousemove', changeColor);
 clearButton.addEventListener('click', removeColor);
-slider.addEventListener('input', updateValue);
+slider.addEventListener('input', updateText);
+slider.addEventListener('input', updateGrid);
 
-function updateValue(){
+function updateText(){
     sliderText.textContent = `${slider.value} x ${slider.value}`;
+}
+
+function updateGrid(){
+    grid.replaceChildren();
+    grid.remove();
+    createGrid(parseInt(slider.value));
 }
 
 
@@ -18,6 +26,7 @@ function createGrid(slider){
         for(let j = 0; j < slider; j++){
         const div = document.createElement('div');
         div.classList.toggle('cells');
+        container.appendChild(grid);
         grid.appendChild(div);
         }
     }
@@ -35,4 +44,4 @@ function removeColor(){
     }
 
 createGrid(parseInt(slider.value));
-updateValue();
+updateText();
