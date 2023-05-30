@@ -48,7 +48,6 @@ h1{
 }
 
 #sizeSlider {
-    -webkit-appearance: none;
     background-color: #39bee3;
     border-radius: 10px;
     outline: none;
