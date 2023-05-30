@@ -2,14 +2,14 @@ const grid = document.querySelector('#grid');
 const color = document.querySelector('#color');
 const clearButton = document.querySelector('#clearButton');
 const slider = document.querySelector('#slider');
-const sliderVal = document.querySelector('#sliderValue');
+const sliderText = document.querySelector('#sliderValue');
 
 grid.addEventListener('mousemove', changeColor);
 clearButton.addEventListener('click', removeColor);
 slider.addEventListener('input', updateValue);
 
 function updateValue(){
-    sliderVal.textContent = `${slider.value} x ${slider.value}`;
+    sliderText.textContent = `${slider.value} x ${slider.value}`;
 }
 
 
