@@ -25,6 +25,8 @@ function createGrid(slider){
     for(let i = 0; i < slider; i++){
         for(let j = 0; j < slider; j++){
         const div = document.createElement('div');
+        div.style.width = (640/slider) + 'px';
+        div.style.height = (640/slider) + 'px';
         div.classList.toggle('cells');
         container.appendChild(grid);
         grid.appendChild(div);
