@@ -41,7 +41,7 @@ function changeColor(e){
 function removeColor(){
     let cells = grid.childNodes;
         for (let i = 0; i < cells.length; i++){
-            cells[i].style.cssText = 'background-color: #FFFFFF'
+            cells[i].style.backgroundColor = '#FFFFFF'
         }
     }
 
