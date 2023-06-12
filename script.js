@@ -35,7 +35,7 @@ function createGrid(slider){
 }
     
 function changeColor(e){
-     e.target.style.cssText = `background-color: ${color.value}`;
+     e.target.style.backgroundColor = color.value;
 }
 
 function removeColor(){
