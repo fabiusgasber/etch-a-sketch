@@ -5,12 +5,18 @@ const slider = document.querySelector('#slider');
 const sliderText = document.querySelector('#sliderValue');
 const container = document.querySelector('.container');
 const defaultButton = document.querySelector('#defaultButton');
+const eraserButton = document.querySelector('#eraserButton');
 
 grid.addEventListener('mousemove', changeColor);
 clearButton.addEventListener('click', removeColor);
 slider.addEventListener('input', updateText);
 slider.addEventListener('input', updateGrid);
 defaultButton.addEventListener('click', setDefault);
+eraserButton.addEventListener('click', setEraser);
+
+function setEraser(){
+    color.value = '#FFFFFF';
+}
 
 function setDefault(){
     slider.value = 16;
