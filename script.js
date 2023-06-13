@@ -13,21 +13,24 @@ slider.addEventListener('input', updateGrid);
 defaultButton.addEventListener('click', setDefault);
 
 function setDefault(){
-    grid.replaceChildren();
-    grid.remove();
     slider.value = 16;
     color.value = '#39bee3';
     updateText();
-    createGrid(slider.value);
+    updateGrid();
 }
 
 function updateText(){
     sliderText.textContent = `${slider.value} x ${slider.value}`;
 }
 
-function updateGrid(){
+function removeGrid(){
     grid.replaceChildren();
     grid.remove();
+
+}
+
+function updateGrid(){
+    removeGrid();
     createGrid(parseInt(slider.value));
 }
 
