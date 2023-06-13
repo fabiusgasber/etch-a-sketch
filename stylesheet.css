@@ -38,9 +38,9 @@ h1{
 }
 .user-area{
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
+    justify-content: center;
+    gap: 5em;
+    margin-bottom: 1em;
 }
 input[type="range"] {
     -webkit-appearance: none;
