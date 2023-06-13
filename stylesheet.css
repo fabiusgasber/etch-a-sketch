@@ -57,3 +57,21 @@ input[type="range"] {
     border-radius: 50%;
     background: #39bee3;
   }
+button {
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    text-align: center;
+    color: #39bee3;
+    font-size: 16px;
+    padding: 10px 24px;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+button:hover {
+    background-color: #39bee3;
+    color: white;
+}
+button:active {
+    transform: translateY(4px);
+  }
