@@ -44,7 +44,7 @@ h1{
 input[type="range"] {
     -webkit-appearance: none;
     margin-right: 15px;
-    width: 200px;
+    width: 100px;
     height: 7px;
     background: #cff3fc;
     border-radius: 5px;
