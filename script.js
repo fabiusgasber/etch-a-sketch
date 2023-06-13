@@ -4,11 +4,22 @@ const clearButton = document.querySelector('#clearButton');
 const slider = document.querySelector('#slider');
 const sliderText = document.querySelector('#sliderValue');
 const container = document.querySelector('.container');
+const defaultButton = document.querySelector('#defaultButton');
 
 grid.addEventListener('mousemove', changeColor);
 clearButton.addEventListener('click', removeColor);
 slider.addEventListener('input', updateText);
 slider.addEventListener('input', updateGrid);
+defaultButton.addEventListener('click', setDefault);
+
+function setDefault(){
+    grid.replaceChildren();
+    grid.remove();
+    slider.value = 16;
+    color.value = '#39bee3';
+    updateText();
+    createGrid(slider.value);
+}
 
 function updateText(){
     sliderText.textContent = `${slider.value} x ${slider.value}`;
