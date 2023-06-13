@@ -2,10 +2,9 @@ html {
     box-sizing: border-box;
 }
 body{
-    text-align: center;
-    background-color: #000414;
-    font-family: 'Poppins', sans-serif;;
-    color: aquamarine;
+    background-color: #0e1119;
+    font-family: 'Roboto Mono', monospace;
+    color: #39bee3;
 }
 p{
     margin-block-start: 0px;
