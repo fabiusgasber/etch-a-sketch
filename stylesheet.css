@@ -12,7 +12,9 @@ p{
     margin-block-end: 0px;
 }
 h1{
-    color: #39bee3;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 100;
 }
 .container{
     display: flex;
