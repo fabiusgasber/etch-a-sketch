@@ -46,4 +46,3 @@ function removeColor(){
     }
 
 createGrid(parseInt(slider.value));
-updateText();
