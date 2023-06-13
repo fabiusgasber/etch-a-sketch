@@ -26,7 +26,6 @@ function updateText(){
 function removeGrid(){
     grid.replaceChildren();
     grid.remove();
-
 }
 
 function updateGrid(){
