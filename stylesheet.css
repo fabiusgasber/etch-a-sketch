@@ -86,7 +86,6 @@ input[type="color"]::-webkit-color-swatch-wrapper {
   }
   
 input[type="color"]::-webkit-color-swatch {
-    border: 1px solid white;
     border-radius: 12px;
     padding: 2px;
   }
