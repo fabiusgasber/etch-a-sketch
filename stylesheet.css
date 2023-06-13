@@ -41,12 +41,18 @@ h1{
     align-items: flex-start;
     align-content: flex-start;
 }
-.user-component{
-    width: 100%;
-}
-
-#sizeSlider {
-    background-color: #39bee3;
-    border-radius: 10px;
-    outline: none;
-}
+input[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 200px;
+    height: 7px;
+    background: #cff3fc;
+    border-radius: 5px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #39bee3;
+  }
