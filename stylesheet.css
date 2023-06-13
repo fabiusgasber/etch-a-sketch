@@ -72,6 +72,3 @@ button:hover {
     background-color: #39bee3;
     color: white;
 }
-button:active {
-    transform: translateY(4px);
-  }
