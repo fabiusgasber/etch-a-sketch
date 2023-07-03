@@ -8,19 +8,22 @@ const defaultButton = document.querySelector('#defaultButton');
 const eraserButton = document.querySelector('#eraserButton');
 
 grid.addEventListener('mousemove', changeColor);
+grid.addEventListener('mousemove', setEraser);
 clearButton.addEventListener('click', removeColor);
 slider.addEventListener('input', updateText);
 slider.addEventListener('input', updateGrid);
 defaultButton.addEventListener('click', setDefault);
-eraserButton.addEventListener('click', setEraser);
 
-function setEraser(){
-    color.value = '#FFFFFF';
+function setEraser(e){
+    if(eraserButton.checked === true){
+        e.target.style.backgroundColor = '#ffffff';
+    }
 }
 
 function setDefault(){
     slider.value = 16;
     color.value = '#39bee3';
+    eraserButton.checked = false;
     updateText();
     updateGrid();
 }
