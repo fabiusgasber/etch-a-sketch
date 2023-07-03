@@ -6,16 +6,31 @@ const sliderText = document.querySelector('#sliderValue');
 const container = document.querySelector('.container');
 const defaultButton = document.querySelector('#defaultButton');
 const eraserButton = document.querySelector('#eraserButton');
+const rainbowButton = document.querySelector('#rainbowButton');
 
 grid.addEventListener('mousemove', changeColor);
 grid.addEventListener('mousemove', setEraser);
+grid.addEventListener('mousemove', setRainbow);
+eraserButton.addEventListener('click', setEraser);
+rainbowButton.addEventListener('click', setRainbow);
 clearButton.addEventListener('click', removeColor);
 slider.addEventListener('input', updateText);
 slider.addEventListener('input', updateGrid);
 defaultButton.addEventListener('click', setDefault);
 
+function setRainbow(e) {
+    if(rainbowButton.checked === true){
+    eraserButton.checked = false;
+    let color1 = Math.floor(Math.random()*256);
+    let color2 = Math.floor(Math.random()*256);
+    let color3 = Math.floor(Math.random()*256);
+    e.target.style.backgroundColor = `rgb(${color1},${color2},${color3})`;
+    }
+}
+
 function setEraser(e){
     if(eraserButton.checked === true){
+        rainbowButton.checked = false;
         e.target.style.backgroundColor = '#ffffff';
     }
 }
@@ -24,6 +39,7 @@ function setDefault(){
     slider.value = 16;
     color.value = '#39bee3';
     eraserButton.checked = false;
+    rainbowButton.checked = false;
     updateText();
     updateGrid();
 }
