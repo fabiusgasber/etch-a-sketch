@@ -30,7 +30,7 @@ function setRainbow(e) {
 
 function setEraser(e){
     if(eraserButton.checked === true){
-        rainbowButton.checked = false;
+        rainbowButton.checked = false;    
         e.target.style.backgroundColor = '#ffffff';
     }
 }
